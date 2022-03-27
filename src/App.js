@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Task from "./pages/Task";
+import ProductList from "./components/ProductList";
+import AddProduct from "./components/AddProduct";
+import EditProduct from "./components/EditProduct";
+import ViewProduct from "./components/ViewProduct";
+import DelProduct from "./components/DelProduct";
+// import { CIcon } from '@coreui/icons-react';
+// import { cilList, cilShieldAlt } from '@coreui/icons';
+import Navbar from './components/Navbar';
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="container">
+    //   <div className="columns">
+    //     <div className="column is-half is-offset-one-quarter">
+    //       <Router>
+    //         <Routes>
+    //           <Route exact path="/"
+    //             element ={<ProductList />} />              
+    //           <Route path="/add"
+    //             element = {<AddProduct />} />              
+    //           <Route path="/edit/:id"
+    //             element = {<EditProduct />} />              
+    //           <Route path="/view/:id"
+    //             element = {<ViewProduct />} />             
+    //           <Route path="/delete/:id"
+    //             element = {<DelProduct />} />              
+    //         </Routes>
+    //       </Router>
+    //     </div>
+    //   </div>
+    // </div>
+
+      <Router>
+          <Navbar />
+        <Routes>          
+          <Route path="/"
+            element = {<Home />} />              
+          <Route path="/task"
+            element = {<Task />} /> 
+          <Route path="/add"
+            element = {<AddProduct />} />              
+          <Route path="/edit/:id"
+            element = {<EditProduct />} />              
+          <Route path="/view/:id"
+            element = {<ViewProduct />} />             
+          <Route path="/delete/:id"
+            element = {<DelProduct />} />                                       
+        </Routes>
+      </Router>    
   );
 }
-
+ 
 export default App;

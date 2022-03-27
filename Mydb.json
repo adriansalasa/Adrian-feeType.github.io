@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "freeTypeCode": 1,
+      "id": 1,
+      "freeTypeName": "Service Fee",
+      "description": "Lorem ipsum dolor sit amet, 1212121299",
+      "status": "Active"
+    },
+    {
+      "freeTypeCode": 3,
+      "id": 3,
+      "freeTypeName": "Cancellation Fee",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "status": "Active"
+    },
+    {
+      "freeTypeCode": 5,
+      "id": 5,
+      "freeTypeName": "Service Fee",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "status": "Active"
+    },
+    {
+      "freeTypeCode": 6,
+      "id": 6,
+      "freeTypeName": "MDR Fee",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "status": "Active"
+    },
+    {
+      "freeTypeCode": 7,
+      "id": 7,
+      "freeTypeName": "After Office Charge",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "status": "Active"
+    },
+    {
+      "freeTypeCode": 8,
+      "id": 8,
+      "freeTypeName": "Domestic Flight Service Fee",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "status": "Active"
+    },
+    {
+      "freeTypeCode": 9,
+      "id": 9,
+      "freeTypeName": "International Flight Service Fee",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "status": "Active"
+    },
+    {
+      "freeTypeCode": 10,
+      "id": 10,
+      "freeTypeName": "Domestic Hotel Service Fee",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "status": "Active"
+    }
+  ]
+}
