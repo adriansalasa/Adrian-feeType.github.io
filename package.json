@@ -1,5 +1,5 @@
 {
-  "homepage": "http://feeType.github.io/adrian-app",
+  "homepage": "https://adriansalasa/Adrian-feeType.github.io",
   "name": "feeType",
   "version": "0.1.0",
   "private": true,
@@ -53,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
