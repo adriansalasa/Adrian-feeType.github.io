@@ -12,31 +12,12 @@ import Navbar from './components/Navbar';
 import './App.css'
 
 function App() {
-  return (
-    // <div className="container">
-    //   <div className="columns">
-    //     <div className="column is-half is-offset-one-quarter">
-    //       <Router>
-    //         <Routes>
-    //           <Route exact path="/"
-    //             element ={<ProductList />} />              
-    //           <Route path="/add"
-    //             element = {<AddProduct />} />              
-    //           <Route path="/edit/:id"
-    //             element = {<EditProduct />} />              
-    //           <Route path="/view/:id"
-    //             element = {<ViewProduct />} />             
-    //           <Route path="/delete/:id"
-    //             element = {<DelProduct />} />              
-    //         </Routes>
-    //       </Router>
-    //     </div>
-    //   </div>
-    // </div>
-
+  return (    
       <Router>
           <Navbar />
         <Routes>          
+          <Route path="/Adrian-feeType.github.io"
+            element = {<Task />} /> 
           <Route path="/"
             element = {<Home />} />              
           <Route path="/task"

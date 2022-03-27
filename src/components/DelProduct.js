@@ -6,8 +6,7 @@ const DelProduct = async(id) => {
     const navigate = useNavigate();
     const [setProducts] = useState([]);
 
-    useEffect(() => {
-        // fetchData();
+    useEffect(() => {        
         navigate("/");
     }, []);
  

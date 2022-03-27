@@ -53,8 +53,7 @@
     border-radius: 4px;
 }
 
-.nav-text a:hover{
-    /* background-color: #1a83ff; */
+.nav-text a:hover{    
     background-color: #f5f5f5;
 }
 

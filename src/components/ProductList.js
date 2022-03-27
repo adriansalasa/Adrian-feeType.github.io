@@ -159,13 +159,7 @@ const ProductList = () => {
                 </Col>
             </Row>
         </Container>
-        </div>
-        // <Container fluid>
-        // <Row>
-        //     <Col style={{background:"green", color:"white"}}>1 of 1</Col>
-        // </Row>
-        // </Container>
-        
+        </div>                
     )
 }
  
