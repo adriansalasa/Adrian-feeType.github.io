@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Adrian-feeType.github.io/static/css/main.8bb88232.css",
-    "main.js": "/Adrian-feeType.github.io/static/js/main.d5efae74.js",
+    "main.js": "/Adrian-feeType.github.io/static/js/main.a15bd8ce.js",
     "static/js/787.d7e7d295.chunk.js": "/Adrian-feeType.github.io/static/js/787.d7e7d295.chunk.js",
     "static/media/bayu_buana_logo.png": "/Adrian-feeType.github.io/static/media/bayu_buana_logo.14c74050c2887e1e4971.png",
     "index.html": "/Adrian-feeType.github.io/index.html",
     "main.8bb88232.css.map": "/Adrian-feeType.github.io/static/css/main.8bb88232.css.map",
-    "main.d5efae74.js.map": "/Adrian-feeType.github.io/static/js/main.d5efae74.js.map",
+    "main.a15bd8ce.js.map": "/Adrian-feeType.github.io/static/js/main.a15bd8ce.js.map",
     "787.d7e7d295.chunk.js.map": "/Adrian-feeType.github.io/static/js/787.d7e7d295.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8bb88232.css",
-    "static/js/main.d5efae74.js"
+    "static/js/main.a15bd8ce.js"
   ]
 }
