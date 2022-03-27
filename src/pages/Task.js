@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Card, Container, Row, Col, Table } from 'react-bootstrap';
-import './Task.css'
 
 const Task = () => {
     const [products, setProducts] = useState([]);
