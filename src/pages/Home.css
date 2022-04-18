@@ -11,3 +11,19 @@
     background: #FF9800;
     border-radius: 4px;
 }
+
+#imgSlide{
+    height: 200px;
+    width: 250px;
+}
+
+.titleProduct{
+    margin-left: 30rem;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#imgCov{    
+    height: 500px;
+    width: 500px;
+}

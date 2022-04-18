@@ -1,15 +1,35 @@
 import React from 'react';
-import { Container} from 'react-bootstrap';
-function Home() {
+import { Row, Col, Container, Card} from 'react-bootstrap';
+import ImageSlider from '../components/ImageSlider';
+import ImageCover from '../assets/cover.jpg'
+import './Home.css'
 
-        return (
-            <div className="home">
-            <Container>
-                <h1>Selamat Datang di Bayu Buana Travel Services</h1>
-                <br />
-                <p>Silahkan klik menu di pojok kiri atas dan pilih Task untuk melihat Service Kami</p>                
-            </Container>
-            </div>
+function Home() {    
+        return (            
+            <>
+            <hr />
+            <Container className="mt-3">                         
+                <Row>
+                    <Col>
+                        <Card>
+                            <Card>
+                                <Card.Img variant="top" src={ImageCover} className="imgCov" />                        
+                            </Card>
+                        </Card>
+                    </Col>
+                </Row> 
+                <Row>
+                    <Col>
+                        <Card className="mt-3 mb-3">
+                            <Card.Body>
+                                <Card.Title className="titleProduct">Our Product</Card.Title>
+                                <ImageSlider className="imgSlide" />                                                         
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>               
+            </Container>            
+            </>
         );
 }
 

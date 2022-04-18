@@ -1,65 +1,58 @@
-import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
- 
-const ViewProduct = () => {
-    const [freeTypeName, setfreeTypeName] = useState('');
-    const [description, setDescription] = useState('');
-    const navigate = useNavigate();
-    const { id } = useParams();
- 
-    useEffect(() => {
-        getProductById();
-    }, []);
- 
-    const getProductById = async() => {
-        const response = await fetch(`http://localhost:3004/posts/${id}`);
-        const data = await response.json();
-        setfreeTypeName(data.freeTypeName);
-        setDescription(data.description);
-    }
- 
-    const updateProduct = async(e) => {
-        e.preventDefault();
-        const product = { freeTypeName, description };
-        await fetch(`http://localhost:3004/posts/${id}`,{
-            method: "PUT",
-            body: JSON.stringify(product),
-            headers:{
-                'Content-Type': 'application/json'
-            }
-        });
-        navigate("/");
-    }
+import React from "react";
 
-    const backHome = ()=>{
-        navigate("/");
-    }
+import {Container, Button, Card, Row, Col} from 'react-bootstrap';
+import '../pages/Task.css';
+import './ViewProduct.css';
+import { useState, useEffect } from "react";
+import {Link, useParams } from "react-router-dom";
+
+function ViewProduct() {
+
+    const[description, setDescription] = useState('');
+    const[detailData, setDetailData] = useState([]);
+    const[myImage, setMyImage] = useState('');
+    const[title, setTitle]=useState('');
+    const { id } = useParams(); //get param url    
+    const[rating, setRating]=useState(0);    
+        
+    useEffect(() => {
+        fetchData();        
+    });
  
-    return (
-        <div>
-            <form onSubmit={updateProduct}>
-                <div className="field">
-                <label className="label">freeTypeName</label>
-                <div className="control">
-                    <input className="input" value={freeTypeName} onChange={(e) => setfreeTypeName(e.target.value)} type="text" placeholder="type free name" />
-                </div>
-                </div>
- 
-                <div className="field">
-                <label className="label">Description</label>
-                <div className="control">
-                    <input className="input" value={description} onChange={(e) => setDescription(e.target.value)} type="text" placeholder="type description here" />
-                </div>
-                </div>
-         
-                <div className="field">
-                <div className="control">
-                    <button className="button is-primary" onClick={backHome}>Back</button>
-                </div>
-                </div>
-            </form>
-        </div>
-    )
+    const fetchData = async() => {
+        const response = await fetch(`http://localhost:3004/data/${id}`);
+        const detailData = await response.json();
+
+        setMyImage(detailData.image);
+        setTitle(detailData.title);
+        setDescription(detailData.description);
+        setRating(detailData.rating);
+    }        
+    
+  return (
+    <>
+        <Container className="mt-4">            
+            <Card>                    
+                <Row >                              
+                    <Col sm={4}>
+                        <img src={myImage} className="img-fluid rounded dtlImg" id="dtlImg" alt="" />                                    
+                    </Col>
+                    <Col sm={8}>
+                        <h3 className="mt-3">{title}</h3>
+                        <p>{description}</p>
+                        <p>Rating: {rating}</p>
+
+                        <Link to="/">                                                
+                            <Button variant="success">                                                
+                                Back
+                            </Button>
+                        </Link>
+                    </Col>                            
+                </Row>                        
+                    
+            </Card>            
+        </Container>
+    </>
+  );
 }
- 
 export default ViewProduct

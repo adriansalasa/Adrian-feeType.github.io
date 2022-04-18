@@ -5,14 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export const SidebarData = [
     {
         title:'Home',
-        path:'/',
+        path:'/home',
         icon: <FontAwesomeIcon icon={['fas', 'house']}/>,
         cName:'nav-text'
     },
 
     {
         title:'Task',
-        path:'/task',
+        path:'/',
         icon: <FontAwesomeIcon icon={['fas', 'briefcase']}/>,
         cName:'nav-text'
     }

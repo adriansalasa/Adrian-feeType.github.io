@@ -1,0 +1,37 @@
+.colAdd{
+    margin-left: 5px;
+    
+}
+
+.colPrint{
+    margin-left: 10px; 
+    margin-right: 5px;   
+}
+
+.colDownload{
+    margin-left: 610px;        
+}
+
+.input-group.md-form.form-sm.form-1 input {
+    border: 1px solid #bdbdbd;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.crdImage{
+    height: 250px;
+    width: 100px;
+}
+

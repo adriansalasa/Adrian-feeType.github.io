@@ -1,0 +1,55 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Galette des Rois",
+      "description": "The English name of this cake would be the “King´s Cake”. Traditionally this cake is eaten after Christmas, during the first week of January, although lately, it has become so popular that many bakeries sell it during the whole month.",
+      "rating": 7,
+      "image": "https://thethingswellmake.com/wp-content/uploads/2013/07/kingcake1.jpg",
+      "created_at": "2020-02-01 10:56:31",
+      "updated_at": "2020-02-13 09:30:23"
+    },
+    {
+      "id": 2,
+      "title": "Black Forest Cherry Cake",
+      "description": "This type of cake is very traditional from the south-east of Germany, the Black Forest region. Although it is widely believed that the original form of this type of cake comes from Switzerland, Germans have perfected it and made it as famous as it is nowadays.",
+      "rating": 6.5,
+      "image": "https://thethingswellmake.com/wp-content/uploads/2013/07/14-traditional-cakes-from-around-the-world-Black-Forest-Cake41.jpg",
+      "created_at": "2020-02-01 10:56:31",
+      "updated_at": "2020-02-13 09:30:23"
+    },
+    {
+      "id": 3,
+      "title": "Revani",
+      "description": "The Arabic world and especially Turkey are very well known for the baklava, a variety of sweets made from dried fruits, layered pastry, and honey. However, they have many other types of sweets and desserts, although they are not as well-known as the first one.",
+      "rating": 6.3,
+      "image": "https://thethingswellmake.com/wp-content/uploads/2013/07/14-traditional-cakes-from-around-the-world-revani-9.jpg",
+      "created_at": "2020-02-01 10:56:31",
+      "updated_at": "2020-02-13 09:30:23"
+    },
+    {
+      "id": 4,
+      "title": "Mochi",
+      "description": "The Mochi is a traditional Japanese cake made of rice paste that is usually prepared in New Year’s Eve, although it can be found throughout the whole year in different varieties like ice creams or even soups. Given the fact that the rice paste is easily molded and can be combined with a wide range of ingredients, an unlimited variety of Mochi cakes can be found.",
+      "rating": 5,
+      "image": "https://thethingswellmake.com/wp-content/uploads/2013/07/mochi-rice-cake.jpg",
+      "created_at": "2020-02-01 10:56:31",
+      "updated_at": "2020-02-13 09:30:23"
+    },
+    {
+      "id": 5,
+      "title": "Mawa Cake",
+      "description": "Mawa cakes are milk based cakes with a touch of cardamom and nuts like almonds or cashews. The Mawa is solidified milk obtained through the process of cooking the milk very slowly so that the liquid evaporates. This Cake is especially traditional in Mumbai where the almost disappeared Irani cafes that populated the city would serve it. Those cafes could not survive the new fast food chains and new age restaurants, but their cakes still remain as one of the favorite treats for Mumbaikars.",
+      "rating": 4.5,
+      "image": "https://thethingswellmake.com/wp-content/uploads/2013/07/14-traditional-cakes-from-around-the-world-mawa-cake-2-min-768x11523.jpg",
+      "created_at": "2020-02-01 10:56:31",
+      "updated_at": "2020-02-13 09:30:23"
+    },
+    {
+      "title": "Holla",
+      "description": "ksjlkdjf;laksjd;lakfjs;ldkjfksjdlkfjsl",
+      "image": "okelah",
+      "id": 6
+    }
+  ]
+}

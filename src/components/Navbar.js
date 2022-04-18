@@ -4,15 +4,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {SidebarData} from './SidebarData'
 import './Navbar.css'
 import '../App.css'
-import logo from '../assets/bayu_buana_logo.png'
-import {Container} from 'react-bootstrap';
+// import logo from '../assets/bayu_buana_logo.png'
+import logo from '../assets/newCakeBanner90.png'
+import {Container, Row, Col} from 'react-bootstrap';
 import ReactRoundedImage from "react-rounded-image";
-import MyPhoto from "../assets/rsz_kat_selfie.jpg";
+import MyPhoto from "../assets/mancap.jpeg";
 
 function Navbar(){
     const[sideBar, setSideBar] = useState(false);
 
     const showSideBar = ()=> setSideBar(!sideBar);
+    // const[fix, setFix]=useState(false);
+
+    // function setFixed(){
+    //     if(window.scrollY>=200){
+    //         setFix(true)
+    //     }else{
+    //         setFix(false)
+    //     }
+    // }
+
+    // window.AddEventListener("scroll", setFixed);
     
     return(
         <>        
@@ -23,24 +35,24 @@ function Navbar(){
             <tr>
                 <td className="ml-3">
                     <Container className=" navbar navbar-light bg-light fixed-top py-lg-0 ml-5 " >                    
-                        <img src={logo} className="BayuBuanaLogo ml-5" alt="Logo Bayu Buana" />                                
-                            <tr>
-                                <td style={{width:30}}>
+                        <img src={logo} alt="Logo MyCake" />                                                            
+                             <Row className="mt-4" style={{height:50}}>                                
+                                <Col style={{width:30}} className="mt-2">
                                     <Link to="" >        
                                         <FontAwesomeIcon  icon={['fas', 'circle-question']}/>        
-                                    </Link>
-                                </td>                                
-                                <td style={{width:30}}>
+                                    </Link>                                
+                                </Col>
+                                <Col style={{width:30}} className="mt-2">                                
                                     <Link to="" >        
                                         <FontAwesomeIcon icon={['far', 'bell']}/>                                    
-                                    </Link>
-                                </td>                                
-                                <td style={{width:30}}>
+                                    </Link>                                
+                                </Col>                                
+                                <Col  className="mt-1">
                                    <ReactRoundedImage image={MyPhoto} 
                                    roundedSize="0" 
-                                   imageWidth="30" imageHeight="30" />
-                                </td>
-                            </tr>
+                                   imageWidth="30" imageHeight="30" />                                
+                                </Col>
+                            </Row>
                     </Container>
                 </td>
             </tr>

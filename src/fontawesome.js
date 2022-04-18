@@ -4,7 +4,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 // import your icons
 import { faCode, faHighlighter, faPencil, faEye, faTrashCan, faCirclePlus, 
 faFileCirclePlus, faEllipsisVertical, faBraille, faDownload, faPrint, 
-faCircleQuestion, faHouse, faCircleXmark, faBriefcase, faBars} from '@fortawesome/free-solid-svg-icons';
+faCircleQuestion, faHouse, faCircleXmark, faBriefcase, faBars, faSearch} from '@fortawesome/free-solid-svg-icons';
 
 import {faBell} from '@fortawesome/free-regular-svg-icons';
 
@@ -25,6 +25,7 @@ library.add(
   faHouse,
   faCircleXmark,
   faBriefcase,
-  faBars
+  faBars,
+  faSearch
   // more icons go here
 );
